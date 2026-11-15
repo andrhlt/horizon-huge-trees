@@ -2,13 +2,26 @@
 
 This repository contains the converter for a data-only Horizon 26.3 worldgen port of TannyJung’s Tan’s Huge Trees Main Pack 1.8.0. The ZIP contains vanilla block states, NBT structures, and worldgen JSON. Horizon’s existing data loader handles all placement. No native build, Java mod, or custom blocks are required.
 
-## Install and play
+## Build the data pack
 
-Build the ZIP using the instructions below. The converter is public, and the generated pack is for private play.
+Download [TannyJung’s Main Pack 1.8.0 archive](https://github.com/TannyJungMC/THT-tree_pack/archive/5f86615bade1edf57abc68fac0c1361ea496e331.zip), then run with Python 3.9 or later.
 
-Use Horizon Nightly 2026-11-13 (9f42064) or a compatible 26.3 build. On **Create New World → Data Packs**, open the pack folder, copy in `tan-huge-trees-horizon-beta.zip`, and enable it before creating the world. To add it to an existing world, put the ZIP in that world’s `datapacks` folder, enable it, then close and reopen the world. Explore newly generated chunks. Vanilla trees are still present, as with the original Tan pack’s default setup.
+```sh
+python3 build_pack.py /path/to/main-pack.zip
+```
 
-The port uses Horizon’s data-only jigsaw ground offset and start checks. Use Horizon for this ZIP.
+The build writes `dist/horizon-huge-trees.zip`, with `pack.mcmeta` and `data/` at the archive root. It uses the bundled list of 26.3 biome IDs and the tags referenced by Tan’s spawn rules. Horizon and Rust are unnecessary at build time. The original `build_pack.py <archive> <prepared-26.3-resources> <output.zip>` form can still override the lookup and output path.
+
+## Install with Horizon
+
+Use Horizon Nightly 2026-11-13 (9f42064) or a compatible 26.3 build.
+
+- **Existing world.** In the launcher, select the world’s **Data Packs** list and add the ZIP. You can also run `horizon-launcher worlds datapack-add "My World" dist/horizon-huge-trees.zip`. Reopen the world and explore new chunks.
+- **New world.** In **Create New World → Data Packs**, open the pack folder, copy in the ZIP, and enable it before creating the world.
+
+The pack uses Horizon’s jigsaw ground offset and start checks. Vanilla trees still generate alongside the giants, as in Tan’s default setup.
+
+Horizon’s online catalog indexes a `datapack` release ZIP. This repository publishes the converter and build inputs. You build the playable ZIP locally with Tan’s archive. [Horizon registry format](https://playhorizon.dev/docs/api/mod-index)
 
 ## Scope
 
@@ -19,15 +32,5 @@ The port uses Horizon’s data-only jigsaw ground offset and start checks. Use H
 - The pack covers generated trees and shrubs. Tan’s saplings, living-tree interactions, tree decorations, litter, and other nature structures are outside this worldgen port.
 
 The adjacent report lists every rule’s biomes and placement settings, plus scaled templates.
-
-## Rebuild
-
-Python 3.9+ and a prepared Horizon 26.3 resource directory are required to build the pack. Use the Main Pack archive from the pinned upstream commit:
-
-[Download TannyJung’s Main Pack](https://github.com/TannyJungMC/THT-tree_pack/archive/5f86615bade1edf57abc68fac0c1361ea496e331.zip)
-
-```sh
-python3 build_pack.py /path/to/main-pack.zip /path/to/prepared/26.3 tan-huge-trees-horizon-beta.zip
-```
 
 Tree shapes and palettes are by TannyJung. The generated pack is for private play. Obtain permission before redistributing it. [Tan’s published terms](https://modrinth.com/mod/tans-huge-trees#terms-of-use)

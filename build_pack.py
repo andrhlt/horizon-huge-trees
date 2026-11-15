@@ -13,7 +13,8 @@ from zipfile import ZipFile, ZIP_DEFLATED, ZIP_STORED
 import zlib
 
 NS = "tan_trees"
-FORMAT = 121
+ROOT = Path(__file__).resolve().parent
+DEFAULT_OUTPUT = ROOT / "dist" / "horizon-huge-trees.zip"
 DATA_VERSION = 5023
 RADIUS = 120
 TOP = 229  # Leaves headroom on ordinary terrain. Taller trees scale offline.
@@ -72,9 +73,16 @@ def palette(data):
 
 
 def biome_lookup(resources):
-    worldgen = resources / "worldgen"
-    biomes = set(json.loads((worldgen / "biomes.json").read_text()))
-    tags = json.loads((worldgen / "biome_tags.json").read_text())
+    if resources is None:
+        data = json.loads((ROOT / "biomes-26.3.json").read_text())
+        biomes, tags = set(data["biomes"]), data["tags"]
+    else:
+        worldgen = resources / "worldgen"
+        biomes = set(json.loads((worldgen / "biomes.json").read_text()))
+        tags = {
+            name: json.loads(value)["values"]
+            for name, value in json.loads((worldgen / "biome_tags.json").read_text()).items()
+        }
 
     def lookup(ref):
         if not ref.startswith("#"):
@@ -90,7 +98,7 @@ def biome_lookup(resources):
                 name = "is_taiga"
             if name in COMMON_BIOMES:
                 return {"minecraft:" + name for name in COMMON_BIOMES[name]}
-        values = json.loads(tags[f"minecraft:{name}"])["values"]
+        values = tags[f"minecraft:{name}"]
         return set().union(*(lookup(v if isinstance(v, str) else v["id"]) for v in values))
 
     def expression(text):
@@ -278,8 +286,7 @@ def build(archive, resources, output):
     coverage = set()
     try:
         with ZipFile(temp, "w", ZIP_DEFLATED, compresslevel=4) as out:
-            write_json(out, "pack.mcmeta", {"pack": {"description": "Tan’s Huge Trees | Horizon worldgen beta",
-                "min_format": FORMAT, "max_format": FORMAT}})
+            out.write(ROOT / "pack.mcmeta", "pack.mcmeta")
             for name, rule in spawn_rules.items():
                 storage = location(rule["path_storage"])
                 family = storage.split("/")[1]
@@ -376,7 +383,7 @@ def build(archive, resources, output):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("source", type=Path, help="Unmodified Tan's Huge Trees Main Pack 1.8.0 archive")
-    parser.add_argument("resources", type=Path, help="Horizon’s prepared 26.3 resources directory")
-    parser.add_argument("output", type=Path)
+    parser.add_argument("resources", type=Path, nargs="?", help="Override the bundled biome lookup with prepared Horizon 26.3 resources")
+    parser.add_argument("output", type=Path, nargs="?", default=DEFAULT_OUTPUT, help="Output ZIP when supplying a resources directory")
     args = parser.parse_args()
     build(args.source, args.resources, args.output)
