@@ -1,0 +1,1108 @@
+{
+  "source_shapes": 550,
+  "families": [
+    "adaptive_voyager",
+    "agathos",
+    "aider",
+    "antenna",
+    "aspirant",
+    "baobab",
+    "birch",
+    "bush",
+    "bush_big",
+    "catalyst",
+    "chimera",
+    "cloud_harvester",
+    "coconut_tree",
+    "departer",
+    "falcon",
+    "fallen_angel",
+    "glamor",
+    "god_of_wasteland",
+    "halcyon",
+    "helios",
+    "hypothermia",
+    "karma",
+    "malus_domestica",
+    "mangrove",
+    "palm",
+    "raiden",
+    "redwood",
+    "redwood_great",
+    "shrub",
+    "snowland",
+    "tortilis",
+    "tree_of_wisdom",
+    "walker",
+    "wayfarer",
+    "wendy",
+    "whisper",
+    "willow",
+    "yokai"
+  ],
+  "rules": {
+    "global/adaptive_voyager": {
+      "family": "adaptive_voyager",
+      "biomes": [
+        "minecraft:birch_forest",
+        "minecraft:dappled_forest",
+        "minecraft:dark_forest",
+        "minecraft:flower_forest",
+        "minecraft:forest",
+        "minecraft:grove",
+        "minecraft:old_growth_birch_forest",
+        "minecraft:pale_garden",
+        "minecraft:plains",
+        "minecraft:savanna",
+        "minecraft:savanna_plateau",
+        "minecraft:sunflower_plains",
+        "minecraft:windswept_savanna"
+      ],
+      "spacing": 32,
+      "frequency": 0.01024
+    },
+    "global/aspirant": {
+      "family": "aspirant",
+      "biomes": [
+        "minecraft:desert"
+      ],
+      "spacing": 32,
+      "frequency": 0.01024
+    },
+    "global/bush": {
+      "family": "bush",
+      "biomes": [
+        "minecraft:bamboo_jungle",
+        "minecraft:birch_forest",
+        "minecraft:dappled_forest",
+        "minecraft:dark_forest",
+        "minecraft:flower_forest",
+        "minecraft:forest",
+        "minecraft:grove",
+        "minecraft:jungle",
+        "minecraft:mangrove_swamp",
+        "minecraft:old_growth_birch_forest",
+        "minecraft:old_growth_pine_taiga",
+        "minecraft:old_growth_spruce_taiga",
+        "minecraft:pale_garden",
+        "minecraft:snowy_taiga",
+        "minecraft:sparse_jungle",
+        "minecraft:swamp",
+        "minecraft:taiga"
+      ],
+      "spacing": 1,
+      "frequency": 1
+    },
+    "global/bush_big": {
+      "family": "bush_big",
+      "biomes": [
+        "minecraft:bamboo_jungle",
+        "minecraft:birch_forest",
+        "minecraft:dappled_forest",
+        "minecraft:dark_forest",
+        "minecraft:flower_forest",
+        "minecraft:forest",
+        "minecraft:grove",
+        "minecraft:jungle",
+        "minecraft:mangrove_swamp",
+        "minecraft:old_growth_birch_forest",
+        "minecraft:old_growth_pine_taiga",
+        "minecraft:old_growth_spruce_taiga",
+        "minecraft:pale_garden",
+        "minecraft:snowy_taiga",
+        "minecraft:sparse_jungle",
+        "minecraft:swamp",
+        "minecraft:taiga"
+      ],
+      "spacing": 1,
+      "frequency": 0.2738612787525831
+    },
+    "global/bush_big_rare": {
+      "family": "bush_big",
+      "biomes": [
+        "minecraft:plains",
+        "minecraft:savanna",
+        "minecraft:savanna_plateau",
+        "minecraft:sunflower_plains",
+        "minecraft:windswept_savanna"
+      ],
+      "spacing": 1,
+      "frequency": 0.019364916731037084
+    },
+    "global/bush_big_waterside": {
+      "family": "bush_big",
+      "biomes": [
+        "minecraft:bamboo_jungle",
+        "minecraft:birch_forest",
+        "minecraft:dappled_forest",
+        "minecraft:dark_forest",
+        "minecraft:flower_forest",
+        "minecraft:forest",
+        "minecraft:grove",
+        "minecraft:jungle",
+        "minecraft:mangrove_swamp",
+        "minecraft:old_growth_birch_forest",
+        "minecraft:old_growth_pine_taiga",
+        "minecraft:old_growth_spruce_taiga",
+        "minecraft:pale_garden",
+        "minecraft:plains",
+        "minecraft:savanna",
+        "minecraft:savanna_plateau",
+        "minecraft:snowy_taiga",
+        "minecraft:sparse_jungle",
+        "minecraft:sunflower_plains",
+        "minecraft:swamp",
+        "minecraft:taiga",
+        "minecraft:windswept_savanna"
+      ],
+      "spacing": 1,
+      "frequency": 0.2165063509461097
+    },
+    "global/bush_big_waterside_arid": {
+      "family": "bush_big",
+      "biomes": [
+        "minecraft:badlands",
+        "minecraft:desert",
+        "minecraft:eroded_badlands",
+        "minecraft:wooded_badlands"
+      ],
+      "spacing": 1,
+      "frequency": 0.3872983346207417
+    },
+    "global/bush_rare": {
+      "family": "bush",
+      "biomes": [
+        "minecraft:plains",
+        "minecraft:savanna",
+        "minecraft:savanna_plateau",
+        "minecraft:sunflower_plains",
+        "minecraft:windswept_savanna"
+      ],
+      "spacing": 1,
+      "frequency": 0.019364916731037084
+    },
+    "global/bush_waterside": {
+      "family": "bush",
+      "biomes": [
+        "minecraft:bamboo_jungle",
+        "minecraft:birch_forest",
+        "minecraft:dappled_forest",
+        "minecraft:dark_forest",
+        "minecraft:flower_forest",
+        "minecraft:forest",
+        "minecraft:grove",
+        "minecraft:jungle",
+        "minecraft:mangrove_swamp",
+        "minecraft:old_growth_birch_forest",
+        "minecraft:old_growth_pine_taiga",
+        "minecraft:old_growth_spruce_taiga",
+        "minecraft:pale_garden",
+        "minecraft:plains",
+        "minecraft:savanna",
+        "minecraft:savanna_plateau",
+        "minecraft:snowy_taiga",
+        "minecraft:sparse_jungle",
+        "minecraft:sunflower_plains",
+        "minecraft:swamp",
+        "minecraft:taiga",
+        "minecraft:windswept_savanna"
+      ],
+      "spacing": 1,
+      "frequency": 0.5916079783099616
+    },
+    "global/bush_waterside_arid": {
+      "family": "bush",
+      "biomes": [
+        "minecraft:badlands",
+        "minecraft:desert",
+        "minecraft:eroded_badlands",
+        "minecraft:wooded_badlands"
+      ],
+      "spacing": 1,
+      "frequency": 0.5916079783099616
+    },
+    "global/catalyst": {
+      "family": "catalyst",
+      "biomes": [
+        "minecraft:plains",
+        "minecraft:sunflower_plains"
+      ],
+      "spacing": 3,
+      "frequency": 0.12727922061357858
+    },
+    "global/catalyst_waterside": {
+      "family": "catalyst",
+      "biomes": [
+        "minecraft:plains",
+        "minecraft:sunflower_plains"
+      ],
+      "spacing": 3,
+      "frequency": 0.034856850115866755
+    },
+    "global/chimera": {
+      "family": "chimera",
+      "biomes": [
+        "minecraft:old_growth_pine_taiga",
+        "minecraft:old_growth_spruce_taiga",
+        "minecraft:snowy_taiga",
+        "minecraft:taiga"
+      ],
+      "spacing": 2,
+      "frequency": 0.08
+    },
+    "global/coconut_tree": {
+      "family": "coconut_tree",
+      "biomes": [
+        "minecraft:beach",
+        "minecraft:snowy_beach"
+      ],
+      "spacing": 1,
+      "frequency": 0.3872983346207417
+    },
+    "global/degradation/oak": {
+      "family": "catalyst",
+      "biomes": [
+        "minecraft:bamboo_jungle",
+        "minecraft:birch_forest",
+        "minecraft:dappled_forest",
+        "minecraft:dark_forest",
+        "minecraft:flower_forest",
+        "minecraft:forest",
+        "minecraft:grove",
+        "minecraft:jungle",
+        "minecraft:mangrove_swamp",
+        "minecraft:old_growth_birch_forest",
+        "minecraft:pale_garden",
+        "minecraft:sparse_jungle",
+        "minecraft:swamp"
+      ],
+      "spacing": 1,
+      "frequency": 0.002165063509461097
+    },
+    "global/degradation/pine": {
+      "family": "wendy",
+      "biomes": [
+        "minecraft:old_growth_pine_taiga",
+        "minecraft:old_growth_spruce_taiga",
+        "minecraft:snowy_taiga",
+        "minecraft:taiga"
+      ],
+      "spacing": 1,
+      "frequency": 0.002165063509461097
+    },
+    "global/fallen_angel": {
+      "family": "fallen_angel",
+      "biomes": [
+        "minecraft:savanna",
+        "minecraft:savanna_plateau",
+        "minecraft:windswept_savanna"
+      ],
+      "spacing": 4,
+      "frequency": 0.08
+    },
+    "global/halcyon": {
+      "family": "halcyon",
+      "biomes": [
+        "minecraft:plains",
+        "minecraft:sunflower_plains"
+      ],
+      "spacing": 3,
+      "frequency": 0.12727922061357858
+    },
+    "global/halcyon_waterside": {
+      "family": "halcyon",
+      "biomes": [
+        "minecraft:plains",
+        "minecraft:sunflower_plains"
+      ],
+      "spacing": 3,
+      "frequency": 0.034856850115866755
+    },
+    "global/palm_waterside_arid": {
+      "family": "palm",
+      "biomes": [
+        "minecraft:badlands",
+        "minecraft:desert",
+        "minecraft:eroded_badlands",
+        "minecraft:wooded_badlands"
+      ],
+      "spacing": 1,
+      "frequency": 0.3872983346207417
+    },
+    "global/shrub": {
+      "family": "shrub",
+      "biomes": [
+        "minecraft:bamboo_jungle",
+        "minecraft:birch_forest",
+        "minecraft:dappled_forest",
+        "minecraft:dark_forest",
+        "minecraft:flower_forest",
+        "minecraft:forest",
+        "minecraft:grove",
+        "minecraft:jungle",
+        "minecraft:mangrove_swamp",
+        "minecraft:old_growth_birch_forest",
+        "minecraft:old_growth_pine_taiga",
+        "minecraft:old_growth_spruce_taiga",
+        "minecraft:pale_garden",
+        "minecraft:snowy_taiga",
+        "minecraft:sparse_jungle",
+        "minecraft:swamp",
+        "minecraft:taiga"
+      ],
+      "spacing": 1,
+      "frequency": 0.2738612787525831
+    },
+    "global/shrub_rare": {
+      "family": "shrub",
+      "biomes": [
+        "minecraft:plains",
+        "minecraft:savanna",
+        "minecraft:savanna_plateau",
+        "minecraft:sunflower_plains",
+        "minecraft:windswept_savanna"
+      ],
+      "spacing": 1,
+      "frequency": 0.013693063937629153
+    },
+    "global/shrub_waterside": {
+      "family": "shrub",
+      "biomes": [
+        "minecraft:bamboo_jungle",
+        "minecraft:birch_forest",
+        "minecraft:dappled_forest",
+        "minecraft:dark_forest",
+        "minecraft:flower_forest",
+        "minecraft:forest",
+        "minecraft:grove",
+        "minecraft:jungle",
+        "minecraft:mangrove_swamp",
+        "minecraft:old_growth_birch_forest",
+        "minecraft:old_growth_pine_taiga",
+        "minecraft:old_growth_spruce_taiga",
+        "minecraft:pale_garden",
+        "minecraft:plains",
+        "minecraft:savanna",
+        "minecraft:savanna_plateau",
+        "minecraft:snowy_taiga",
+        "minecraft:sparse_jungle",
+        "minecraft:sunflower_plains",
+        "minecraft:swamp",
+        "minecraft:taiga",
+        "minecraft:windswept_savanna"
+      ],
+      "spacing": 1,
+      "frequency": 0.2165063509461097
+    },
+    "global/shrub_waterside_arid": {
+      "family": "shrub",
+      "biomes": [
+        "minecraft:badlands",
+        "minecraft:desert",
+        "minecraft:eroded_badlands",
+        "minecraft:wooded_badlands"
+      ],
+      "spacing": 1,
+      "frequency": 0.3872983346207417
+    },
+    "global/tortilis": {
+      "family": "tortilis",
+      "biomes": [
+        "minecraft:savanna",
+        "minecraft:savanna_plateau",
+        "minecraft:windswept_savanna"
+      ],
+      "spacing": 2,
+      "frequency": 0.02
+    },
+    "global/walker": {
+      "family": "walker",
+      "biomes": [
+        "minecraft:savanna",
+        "minecraft:savanna_plateau",
+        "minecraft:windswept_savanna"
+      ],
+      "spacing": 5,
+      "frequency": 0.09682458365518544
+    },
+    "global/wayfarer": {
+      "family": "wayfarer",
+      "biomes": [
+        "minecraft:savanna",
+        "minecraft:savanna_plateau",
+        "minecraft:windswept_savanna"
+      ],
+      "spacing": 10,
+      "frequency": 0.03872983346207417
+    },
+    "vanilla/agathos": {
+      "family": "agathos",
+      "biomes": [
+        "minecraft:old_growth_birch_forest"
+      ],
+      "spacing": 2,
+      "frequency": 1
+    },
+    "vanilla/aider": {
+      "family": "aider",
+      "biomes": [
+        "minecraft:birch_forest"
+      ],
+      "spacing": 2,
+      "frequency": 1
+    },
+    "vanilla/antenna": {
+      "family": "antenna",
+      "biomes": [
+        "minecraft:old_growth_pine_taiga"
+      ],
+      "spacing": 2,
+      "frequency": 1
+    },
+    "vanilla/baobab": {
+      "family": "baobab",
+      "biomes": [
+        "minecraft:wooded_badlands"
+      ],
+      "spacing": 4,
+      "frequency": 0.8
+    },
+    "vanilla/birch": {
+      "family": "birch",
+      "biomes": [
+        "minecraft:birch_forest"
+      ],
+      "spacing": 1,
+      "frequency": 1
+    },
+    "vanilla/catalyst": {
+      "family": "catalyst",
+      "biomes": [
+        "minecraft:dark_forest",
+        "minecraft:forest",
+        "minecraft:jungle"
+      ],
+      "spacing": 3,
+      "frequency": 1
+    },
+    "vanilla/cherry": {
+      "family": "halcyon",
+      "biomes": [
+        "minecraft:cherry_grove"
+      ],
+      "spacing": 3,
+      "frequency": 1
+    },
+    "vanilla/departer": {
+      "family": "departer",
+      "biomes": [
+        "minecraft:bamboo_jungle"
+      ],
+      "spacing": 4,
+      "frequency": 1
+    },
+    "vanilla/falcon": {
+      "family": "falcon",
+      "biomes": [
+        "minecraft:dark_forest"
+      ],
+      "spacing": 4,
+      "frequency": 1
+    },
+    "vanilla/falcon_waterside": {
+      "family": "falcon",
+      "biomes": [
+        "minecraft:savanna"
+      ],
+      "spacing": 3,
+      "frequency": 0.09000000000000002
+    },
+    "vanilla/fallen_angel": {
+      "family": "fallen_angel",
+      "biomes": [
+        "minecraft:wooded_badlands"
+      ],
+      "spacing": 4,
+      "frequency": 1
+    },
+    "vanilla/glamor": {
+      "family": "glamor",
+      "biomes": [
+        "minecraft:snowy_taiga"
+      ],
+      "spacing": 2,
+      "frequency": 1
+    },
+    "vanilla/god_of_wasteland": {
+      "family": "god_of_wasteland",
+      "biomes": [
+        "minecraft:badlands",
+        "minecraft:eroded_badlands",
+        "minecraft:savanna",
+        "minecraft:wooded_badlands"
+      ],
+      "spacing": 13,
+      "frequency": 0.016900000000000002
+    },
+    "vanilla/halcyon": {
+      "family": "halcyon",
+      "biomes": [
+        "minecraft:dark_forest",
+        "minecraft:forest",
+        "minecraft:jungle"
+      ],
+      "spacing": 3,
+      "frequency": 1
+    },
+    "vanilla/helios": {
+      "family": "helios",
+      "biomes": [
+        "minecraft:snowy_plains"
+      ],
+      "spacing": 32,
+      "frequency": 0.01024
+    },
+    "vanilla/hypothermia": {
+      "family": "hypothermia",
+      "biomes": [
+        "minecraft:ice_spikes"
+      ],
+      "spacing": 2,
+      "frequency": 1
+    },
+    "vanilla/karma": {
+      "family": "karma",
+      "biomes": [
+        "minecraft:dark_forest"
+      ],
+      "spacing": 32,
+      "frequency": 1
+    },
+    "vanilla/mangrove": {
+      "family": "mangrove",
+      "biomes": [
+        "minecraft:mangrove_swamp"
+      ],
+      "spacing": 2,
+      "frequency": 1
+    },
+    "vanilla/palm": {
+      "family": "palm",
+      "biomes": [
+        "minecraft:jungle",
+        "minecraft:sparse_jungle"
+      ],
+      "spacing": 1,
+      "frequency": 0.3872983346207417
+    },
+    "vanilla/raiden": {
+      "family": "raiden",
+      "biomes": [
+        "minecraft:jungle"
+      ],
+      "spacing": 4,
+      "frequency": 1
+    },
+    "vanilla/redwood": {
+      "family": "redwood",
+      "biomes": [
+        "minecraft:old_growth_spruce_taiga"
+      ],
+      "spacing": 2,
+      "frequency": 1
+    },
+    "vanilla/snowland": {
+      "family": "snowland",
+      "biomes": [
+        "minecraft:snowy_plains"
+      ],
+      "spacing": 7,
+      "frequency": 0.49
+    },
+    "vanilla/tortilis": {
+      "family": "tortilis",
+      "biomes": [
+        "minecraft:wooded_badlands"
+      ],
+      "spacing": 2,
+      "frequency": 0.938083151964686
+    },
+    "vanilla/tree_of_wisdom": {
+      "family": "tree_of_wisdom",
+      "biomes": [
+        "minecraft:plains"
+      ],
+      "spacing": 13,
+      "frequency": 0.016900000000000002
+    },
+    "vanilla/variants/polaris": {
+      "family": "wendy",
+      "biomes": [
+        "minecraft:grove"
+      ],
+      "spacing": 1,
+      "frequency": 1
+    },
+    "vanilla/wendy": {
+      "family": "wendy",
+      "biomes": [
+        "minecraft:taiga"
+      ],
+      "spacing": 1,
+      "frequency": 1
+    },
+    "vanilla/whisper": {
+      "family": "whisper",
+      "biomes": [
+        "minecraft:swamp"
+      ],
+      "spacing": 2,
+      "frequency": 1
+    },
+    "vanilla/willow": {
+      "family": "willow",
+      "biomes": [
+        "minecraft:swamp"
+      ],
+      "spacing": 2,
+      "frequency": 1
+    },
+    "vanilla/yokai": {
+      "family": "yokai",
+      "biomes": [
+        "minecraft:meadow"
+      ],
+      "spacing": 32,
+      "frequency": 1
+    },
+    "biomesoplenty/bush_dense": {
+      "family": "bush",
+      "biomes": [
+        "minecraft:desert"
+      ],
+      "spacing": 1,
+      "frequency": 1
+    },
+    "biomesoplenty/malus_domestica": {
+      "family": "malus_domestica",
+      "biomes": [
+        "minecraft:plains",
+        "minecraft:sunflower_plains"
+      ],
+      "spacing": 2,
+      "frequency": 0.17320508075688776
+    },
+    "biomesoplenty/redwood_great": {
+      "family": "redwood_great",
+      "biomes": [
+        "minecraft:old_growth_spruce_taiga"
+      ],
+      "spacing": 2,
+      "frequency": 0.6
+    },
+    "biomesoplenty/shrub": {
+      "family": "shrub",
+      "biomes": [
+        "minecraft:desert"
+      ],
+      "spacing": 1,
+      "frequency": 0.1
+    },
+    "regions_unexplored/baobab": {
+      "family": "baobab",
+      "biomes": [
+        "minecraft:savanna",
+        "minecraft:savanna_plateau"
+      ],
+      "spacing": 4,
+      "frequency": 0.8
+    },
+    "regions_unexplored/catalyst": {
+      "family": "catalyst",
+      "biomes": [
+        "minecraft:dappled_forest",
+        "minecraft:flower_forest",
+        "minecraft:windswept_forest"
+      ],
+      "spacing": 2,
+      "frequency": 1
+    },
+    "regions_unexplored/cloud_harvester": {
+      "family": "cloud_harvester",
+      "biomes": [
+        "minecraft:desert"
+      ],
+      "spacing": 13,
+      "frequency": 1
+    },
+    "regions_unexplored/halcyon": {
+      "family": "halcyon",
+      "biomes": [
+        "minecraft:dappled_forest",
+        "minecraft:flower_forest",
+        "minecraft:windswept_forest"
+      ],
+      "spacing": 2,
+      "frequency": 1
+    },
+    "regions_unexplored/malus_domestica": {
+      "family": "malus_domestica",
+      "biomes": [
+        "minecraft:plains",
+        "minecraft:sunflower_plains"
+      ],
+      "spacing": 2,
+      "frequency": 0.17320508075688776
+    },
+    "regions_unexplored/redwood_great": {
+      "family": "redwood_great",
+      "biomes": [
+        "minecraft:old_growth_pine_taiga",
+        "minecraft:old_growth_spruce_taiga"
+      ],
+      "spacing": 2,
+      "frequency": 0.6
+    },
+    "horizon/pale_garden": {
+      "family": "halcyon",
+      "biomes": [
+        "minecraft:pale_garden"
+      ],
+      "spacing": 3,
+      "frequency": 1
+    },
+    "horizon/windswept": {
+      "family": "aider",
+      "biomes": [
+        "minecraft:windswept_hills",
+        "minecraft:windswept_gravelly_hills"
+      ],
+      "spacing": 2,
+      "frequency": 1
+    }
+  },
+  "scaled_shapes": [
+    {
+      "template": "trees/adaptive_voyager/adaptive_voyager/00_living",
+      "scale": 0.4839
+    },
+    {
+      "template": "trees/aspirant/aspirant/00_living",
+      "scale": 0.6977
+    },
+    {
+      "template": "trees/aspirant/aspirant/01_living",
+      "scale": 0.75
+    },
+    {
+      "template": "trees/aspirant/aspirant/02_living",
+      "scale": 0.5714
+    },
+    {
+      "template": "trees/aspirant/aspirant/03_living",
+      "scale": 0.7229
+    },
+    {
+      "template": "trees/aspirant/aspirant/04_living",
+      "scale": 0.6452
+    },
+    {
+      "template": "trees/aspirant/aspirant/05_living",
+      "scale": 0.6742
+    },
+    {
+      "template": "trees/aspirant/aspirant/06_living",
+      "scale": 0.7186
+    },
+    {
+      "template": "trees/aspirant/aspirant/07_living",
+      "scale": 0.625
+    },
+    {
+      "template": "trees/aspirant/aspirant/08_living",
+      "scale": 0.6593
+    },
+    {
+      "template": "trees/aspirant/aspirant/09_living",
+      "scale": 0.6383
+    },
+    {
+      "template": "trees/wayfarer/wayfarer/00_living",
+      "scale": 0.5769
+    },
+    {
+      "template": "trees/wayfarer/wayfarer/01_living",
+      "scale": 0.6977
+    },
+    {
+      "template": "trees/wayfarer/wayfarer/02_living",
+      "scale": 0.8392
+    },
+    {
+      "template": "trees/wayfarer/wayfarer/03_living",
+      "scale": 0.6818
+    },
+    {
+      "template": "trees/wayfarer/wayfarer/04_living",
+      "scale": 0.7453
+    },
+    {
+      "template": "trees/wayfarer/wayfarer/05_living",
+      "scale": 0.6704
+    },
+    {
+      "template": "trees/wayfarer/wayfarer/06_living",
+      "scale": 0.75
+    },
+    {
+      "template": "trees/wayfarer/wayfarer/07_living",
+      "scale": 0.7595
+    },
+    {
+      "template": "trees/wayfarer/wayfarer/08_living",
+      "scale": 0.6557
+    },
+    {
+      "template": "trees/wayfarer/wayfarer/09_living",
+      "scale": 0.6977
+    },
+    {
+      "template": "trees/departer/departer/00_living",
+      "scale": 0.9459
+    },
+    {
+      "template": "trees/departer/departer/07_living",
+      "scale": 0.9292
+    },
+    {
+      "template": "trees/departer/departer/15_living",
+      "scale": 0.9813
+    },
+    {
+      "template": "trees/departer/departer/16_living",
+      "scale": 0.9906
+    },
+    {
+      "template": "trees/god_of_wasteland/god_of_wasteland/00_living",
+      "scale": 0.566
+    },
+    {
+      "template": "trees/helios/helios/00_living",
+      "scale": 0.236
+    },
+    {
+      "template": "trees/karma/karma/00_living",
+      "scale": 0.2679
+    },
+    {
+      "template": "trees/karma/karma/01_living",
+      "scale": 0.2679
+    },
+    {
+      "template": "trees/redwood/redwood/08_living",
+      "scale": 0.9871
+    },
+    {
+      "template": "trees/redwood/redwood/14_living",
+      "scale": 0.9197
+    },
+    {
+      "template": "trees/redwood/redwood/18_living",
+      "scale": 0.9309
+    },
+    {
+      "template": "trees/snowland/snowland/00_living",
+      "scale": 0.9957
+    },
+    {
+      "template": "trees/snowland/snowland/03_living",
+      "scale": 0.9347
+    },
+    {
+      "template": "trees/snowland/snowland/06_living",
+      "scale": 0.9463
+    },
+    {
+      "template": "trees/tree_of_wisdom/tree_of_wisdom/00_living",
+      "scale": 0.9211
+    },
+    {
+      "template": "trees/tree_of_wisdom/tree_of_wisdom/01_living",
+      "scale": 0.9292
+    },
+    {
+      "template": "trees/tree_of_wisdom/tree_of_wisdom/02_living",
+      "scale": 0.9302
+    },
+    {
+      "template": "trees/yokai/yokai/00_living",
+      "scale": 0.4196
+    },
+    {
+      "template": "trees/yokai/yokai/01_living",
+      "scale": 0.4762
+    },
+    {
+      "template": "trees/yokai/yokai/02_living",
+      "scale": 0.4444
+    },
+    {
+      "template": "trees/variants/redwood_great_biomesoplenty/00_living",
+      "scale": 0.8267
+    },
+    {
+      "template": "trees/variants/redwood_great_biomesoplenty/01_living",
+      "scale": 0.7763
+    },
+    {
+      "template": "trees/variants/redwood_great_biomesoplenty/02_living",
+      "scale": 0.7293
+    },
+    {
+      "template": "trees/variants/redwood_great_biomesoplenty/03_living",
+      "scale": 0.6657
+    },
+    {
+      "template": "trees/variants/redwood_great_biomesoplenty/04_living",
+      "scale": 0.8577
+    },
+    {
+      "template": "trees/variants/redwood_great_biomesoplenty/05_living",
+      "scale": 0.6755
+    },
+    {
+      "template": "trees/variants/redwood_great_biomesoplenty/06_living",
+      "scale": 0.7363
+    },
+    {
+      "template": "trees/variants/redwood_great_biomesoplenty/07_living",
+      "scale": 0.8007
+    },
+    {
+      "template": "trees/variants/redwood_great_biomesoplenty/08_living",
+      "scale": 0.8674
+    },
+    {
+      "template": "trees/variants/redwood_great_biomesoplenty/09_living",
+      "scale": 0.8674
+    },
+    {
+      "template": "trees/cloud_harvester/cloud_harvester/00_living",
+      "scale": 0.6257
+    },
+    {
+      "template": "trees/cloud_harvester/cloud_harvester/01_living",
+      "scale": 0.6379
+    },
+    {
+      "template": "trees/cloud_harvester/cloud_harvester/02_living",
+      "scale": 0.5842
+    },
+    {
+      "template": "trees/cloud_harvester/cloud_harvester/03_living",
+      "scale": 0.5917
+    },
+    {
+      "template": "trees/cloud_harvester/cloud_harvester/04_living",
+      "scale": 0.6309
+    },
+    {
+      "template": "trees/cloud_harvester/cloud_harvester/05_living",
+      "scale": 0.6939
+    },
+    {
+      "template": "trees/cloud_harvester/cloud_harvester/06_living",
+      "scale": 0.5948
+    },
+    {
+      "template": "trees/cloud_harvester/cloud_harvester/07_living",
+      "scale": 0.6343
+    },
+    {
+      "template": "trees/cloud_harvester/cloud_harvester/08_living",
+      "scale": 0.6361
+    },
+    {
+      "template": "trees/cloud_harvester/cloud_harvester/09_living",
+      "scale": 0.6469
+    },
+    {
+      "template": "trees/variants/redwood_great_regions_unexplored/00_living",
+      "scale": 0.8267
+    },
+    {
+      "template": "trees/variants/redwood_great_regions_unexplored/01_living",
+      "scale": 0.7763
+    },
+    {
+      "template": "trees/variants/redwood_great_regions_unexplored/02_living",
+      "scale": 0.7293
+    },
+    {
+      "template": "trees/variants/redwood_great_regions_unexplored/03_living",
+      "scale": 0.6657
+    },
+    {
+      "template": "trees/variants/redwood_great_regions_unexplored/04_living",
+      "scale": 0.8577
+    },
+    {
+      "template": "trees/variants/redwood_great_regions_unexplored/05_living",
+      "scale": 0.6755
+    },
+    {
+      "template": "trees/variants/redwood_great_regions_unexplored/06_living",
+      "scale": 0.7363
+    },
+    {
+      "template": "trees/variants/redwood_great_regions_unexplored/07_living",
+      "scale": 0.8007
+    },
+    {
+      "template": "trees/variants/redwood_great_regions_unexplored/08_living",
+      "scale": 0.8674
+    },
+    {
+      "template": "trees/variants/redwood_great_regions_unexplored/09_living",
+      "scale": 0.8674
+    }
+  ],
+  "templates": 726,
+  "biomes": [
+    "minecraft:badlands",
+    "minecraft:bamboo_jungle",
+    "minecraft:beach",
+    "minecraft:birch_forest",
+    "minecraft:cherry_grove",
+    "minecraft:dappled_forest",
+    "minecraft:dark_forest",
+    "minecraft:desert",
+    "minecraft:eroded_badlands",
+    "minecraft:flower_forest",
+    "minecraft:forest",
+    "minecraft:grove",
+    "minecraft:ice_spikes",
+    "minecraft:jungle",
+    "minecraft:mangrove_swamp",
+    "minecraft:meadow",
+    "minecraft:old_growth_birch_forest",
+    "minecraft:old_growth_pine_taiga",
+    "minecraft:old_growth_spruce_taiga",
+    "minecraft:pale_garden",
+    "minecraft:plains",
+    "minecraft:savanna",
+    "minecraft:savanna_plateau",
+    "minecraft:snowy_beach",
+    "minecraft:snowy_plains",
+    "minecraft:snowy_taiga",
+    "minecraft:sparse_jungle",
+    "minecraft:sunflower_plains",
+    "minecraft:swamp",
+    "minecraft:taiga",
+    "minecraft:windswept_forest",
+    "minecraft:windswept_gravelly_hills",
+    "minecraft:windswept_hills",
+    "minecraft:windswept_savanna",
+    "minecraft:wooded_badlands"
+  ]
+}
