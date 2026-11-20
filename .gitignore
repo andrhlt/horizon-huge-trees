@@ -1,5 +1,6 @@
 # The upstream archive and generated packs contain Tan’s original shapes.
 *.zip
+*.hmod
 *.tmp
 __pycache__/
 .DS_Store

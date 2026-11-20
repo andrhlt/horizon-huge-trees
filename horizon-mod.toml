@@ -1,0 +1,9 @@
+id = "tan_trees"
+name = "Horizon Huge Trees"
+version = "1.8.0"
+description = "A worldgen port of Tan's Huge Trees Main Pack."
+authors = ["TannyJung"]
+license_url = "https://modrinth.com/mod/tans-huge-trees#terms-of-use"
+api = "0.2"
+side = "server"
+capabilities = ["registries"]

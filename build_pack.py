@@ -14,7 +14,7 @@ import zlib
 
 NS = "tan_trees"
 ROOT = Path(__file__).resolve().parent
-DEFAULT_OUTPUT = ROOT / "dist" / "horizon-huge-trees.zip"
+DEFAULT_OUTPUT = ROOT / "dist" / "horizon-huge-trees.hmod"
 DATA_VERSION = 5023
 RADIUS = 120
 TOP = 229  # Leaves headroom on ordinary terrain. Taller trees scale offline.
@@ -286,7 +286,7 @@ def build(archive, resources, output):
     coverage = set()
     try:
         with ZipFile(temp, "w", ZIP_DEFLATED, compresslevel=4) as out:
-            out.write(ROOT / "pack.mcmeta", "pack.mcmeta")
+            out.write(ROOT / "horizon-mod.toml", "horizon-mod.toml")
             for name, rule in spawn_rules.items():
                 storage = location(rule["path_storage"])
                 family = storage.split("/")[1]
@@ -384,6 +384,6 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("source", type=Path, help="Unmodified Tan's Huge Trees Main Pack 1.8.0 archive")
     parser.add_argument("resources", type=Path, nargs="?", help="Override the bundled biome lookup with prepared Horizon 26.3 resources")
-    parser.add_argument("output", type=Path, nargs="?", default=DEFAULT_OUTPUT, help="Output ZIP when supplying a resources directory")
+    parser.add_argument("output", type=Path, nargs="?", default=DEFAULT_OUTPUT, help="Output .hmod when supplying a resources directory")
     args = parser.parse_args()
     build(args.source, args.resources, args.output)
